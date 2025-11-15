@@ -1,26 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CoData_Movil_App.MainPage">
+             Shell.NavBarIsVisible="False"
+             x:Class="CoData_Movil_App.MainPage"
+             >
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            
 
+            <Image Source="logo_codata.png" HeightRequest="150" WidthRequest="150"/>
+           
             <Label
-                Text="Hello, World!"
+                Text="Bienvenido!"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                />
 
-            <Entry Text="Juan@gmail.com"/>
+            <VerticalStackLayout>
+                <Label Text="Inicio de sesión" FontSize="18" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
 
-            <Grid>
-                <Entry>
-                    
-                </Entry>
-            </Grid>
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28" >
+                    <Image Source="icono_user.png" HeightRequest="20" WidthRequest="20"/>
+                </Frame>
+
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <Entry Margin="20,0,0,0" Placeholder="Correo electronico" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28" >
+                    <Image Source="icono_contra.png" HeightRequest="20" WidthRequest="20"/>
+                </Frame>
+
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <Entry Margin="20,0,0,0" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
+                </Frame>
+            </StackLayout>
+
+            <Button Text="Iniciar" BackgroundColor="BlueViolet"/>
 
 
         </VerticalStackLayout>
