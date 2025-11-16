@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.NavBarIsVisible="False"
              x:Class="CoData_Movil_App.MainPage"
+             
              >
+   
+    
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
 
             <Image Source="logo_codata.png" HeightRequest="150" WidthRequest="150"/>
            
@@ -18,7 +22,7 @@
                 />
 
             <VerticalStackLayout>
-                <Label Text="Inicio de sesión" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Inicia sesión" FontSize="18" HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>
 
             <StackLayout Orientation="Horizontal">
@@ -38,12 +42,33 @@
 
                 <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
                     <Entry Margin="20,0,0,0" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
+
+                    
                 </Frame>
+                <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30"/>
+                
+            </StackLayout>
+             
+
+            <Button Text="Iniciar" BackgroundColor="Tomato"/>
+            <Label VerticalOptions="Start" Text="¿Olvideaste tu contraseña?"/>
+            <VerticalStackLayout>
+                <Label TextColor="White" Text="R"/> 
+            </VerticalStackLayout> 
+           
+                <VerticalStackLayout>
+                <Label Text="Continuar con:" TextColor="DarkSlateGrey" FontSize="18" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <ImageButton Source="logo_whatsapp.png"/>
+            <ImageButton Source="logo_google.png"/>
+
+           
+
+            <StackLayout BackgroundColor="WhiteSmoke">
+                <Label HorizontalOptions="Center" Text="© 2025 CoData." />
             </StackLayout>
 
-            <Button Text="Iniciar" BackgroundColor="BlueViolet"/>
-            
-            
 
 
         </VerticalStackLayout>
