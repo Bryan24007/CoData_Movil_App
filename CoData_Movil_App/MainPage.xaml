@@ -42,6 +42,8 @@
             </StackLayout>
 
             <Button Text="Iniciar" BackgroundColor="BlueViolet"/>
+            
+            
 
 
         </VerticalStackLayout>
