@@ -48,13 +48,24 @@
                 <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30"/>
                 
             </StackLayout>
-             
 
-            <Button Text="Iniciar" BackgroundColor="Tomato"/>
-            <Label VerticalOptions="Start" Text="¿Olvideaste tu contraseña?"/>
-            <VerticalStackLayout>
-                <Label TextColor="White" Text="R"/> 
-            </VerticalStackLayout> 
+
+            <Button Text="Iniciar" BackgroundColor="#960e53"/>
+           
+            <Grid RowSpacing="20" ColumnSpacing="100" Grid.Row="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label VerticalOptions="Start" Text="¿Olvideaste tu contraseña?" Grid.Row="0" Grid.Column="0"/>
+                <Button BackgroundColor="Transparent" TextColor="Black" Text="Registrarse" Grid.Row="0" Grid.Column="1" Clicked="p_registro" />
+            </Grid>
+           
            
                 <VerticalStackLayout>
                 <Label Text="Continuar con:" TextColor="DarkSlateGrey" FontSize="18" HorizontalTextAlignment="Center"/>

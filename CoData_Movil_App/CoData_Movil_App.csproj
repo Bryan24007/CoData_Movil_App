@@ -65,7 +65,13 @@
 	<ItemGroup>
 	  <Folder Include="MVM\Model\" />
 	  <Folder Include="MVM\Model View\" />
-	  <Folder Include="MVM\View\" />
+	  <Folder Include="Resources\Images\Login iconos\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVM\View\Pantalla_Registro.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace CoData_Movil_App
+﻿using CoData_Movil_App.MVM.View;
+
+namespace CoData_Movil_App
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new MainPage();
         }
     }
 }
