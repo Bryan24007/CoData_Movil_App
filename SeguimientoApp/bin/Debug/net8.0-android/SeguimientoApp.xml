@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SeguimientoApp</name>
+    </assembly>
+    <members>
+        <member name="T:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.Reportes">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.reportes"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ReportesFiltrados">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.reportesFiltrados"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.TextoBusqueda">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.textoBusqueda"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.IsRefreshing">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.isRefreshing"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ReporteSeleccionado">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.reporteSeleccionado"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.IsExpandido">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.isExpandido"/>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ContadorReportes">
+            <inheritdoc cref="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.contadorReportes"/>
+        </member>
+        <member name="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.OnTextoBusquedaChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.TextoBusqueda"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.TextoBusqueda"/> is changed.</remarks>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.filtrarReportesCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.FiltrarReportesCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.FiltrarReportesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.FiltrarReportes"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.refrescarCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.RefrescarCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.RefrescarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.RefrescarAsync"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.seleccionarReporteCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.SeleccionarReporteCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.SeleccionarReporteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.SeleccionarReporte(SeguimientoApp.MVVM.Models.Reporte)"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.actualizarReporteCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ActualizarReporteCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ActualizarReporteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.ActualizarReporteAsync(SeguimientoApp.MVVM.Models.Reporte)"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.verMapaCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.VerMapaCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.VerMapaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.VerMapaAsync(SeguimientoApp.MVVM.Models.Reporte)"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.eliminarReporteCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.EliminarReporteCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.EliminarReporteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.EliminarReporteAsync(SeguimientoApp.MVVM.Models.Reporte)"/>.</summary>
+        </member>
+        <member name="F:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.llamarContactoCommand">
+            <summary>The backing field for <see cref="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.LlamarContactoCommand"/>.</summary>
+        </member>
+        <member name="P:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.LlamarContactoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:SeguimientoApp.MVVM.ViewModels.SeguimientoViewModel.LlamarContacto(SeguimientoApp.MVVM.Models.Reporte)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Reportes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Reportes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReportesFiltrados">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReportesFiltrados" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TextoBusqueda">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TextoBusqueda" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ReporteSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ReporteSeleccionado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsExpandido">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsExpandido" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ContadorReportes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ContadorReportes" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Reportes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Reportes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReportesFiltrados">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReportesFiltrados" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TextoBusqueda">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TextoBusqueda" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ReporteSeleccionado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ReporteSeleccionado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsExpandido">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsExpandido" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ContadorReportes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ContadorReportes" generated properties.</summary>
+        </member>
+    </members>
+</doc>

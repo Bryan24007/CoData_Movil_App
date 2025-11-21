@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="PrimaryColor">#4CAF50</Color>
+    <Color x:Key="PrimaryDarkColor">#388E3C</Color>
+    <Color x:Key="AccentColor">#2196F3</Color>
+    <Color x:Key="DangerColor">#F44336</Color>
+    <Color x:Key="WarningColor">#FF9800</Color>
+    <Color x:Key="SuccessColor">#4CAF50</Color>
+    <Color x:Key="GrayColor">#666666</Color>
+    <Color x:Key="LightGrayColor">#E8E8E8</Color>
+    <Color x:Key="BackgroundColor">#F5F5F5</Color>
+    <Color x:Key="CardBackgroundColor">White</Color>
+    <Color x:Key="TextPrimaryColor">#333333</Color>
+    <Color x:Key="TextSecondaryColor">#666666</Color>
+
+    <!-- Estilo para botones de acción -->
+    <Style x:Key="ActionButtonStyle" TargetType="Button">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="HeightRequest" Value="35"/>
+        <Setter Property="Padding" Value="15,0"/>
+        <Setter Property="TextColor" Value="White"/>
+    </Style>
+
+    <Style x:Key="PrimaryButton" TargetType="Button" BasedOn="{StaticResource ActionButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+    </Style>
+
+    <Style x:Key="SecondaryButton" TargetType="Button" BasedOn="{StaticResource ActionButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource GrayColor}"/>
+    </Style>
+
+    <Style x:Key="DangerButton" TargetType="Button" BasedOn="{StaticResource ActionButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource DangerColor}"/>
+    </Style>
+
+    <!-- Estilo para tarjetas -->
+    <Style x:Key="CardStyle" TargetType="Frame">
+        <Setter Property="BackgroundColor" Value="{StaticResource CardBackgroundColor}"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="HasShadow" Value="True"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Margin" Value="0,5"/>
+    </Style>
+
+    <!-- Estilo para SearchBar -->
+    <Style x:Key="SearchBarStyle" TargetType="SearchBar">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="CancelButtonColor" Value="{StaticResource PrimaryColor}"/>
+        <Setter Property="PlaceholderColor" Value="{StaticResource GrayColor}"/>
+    </Style>
+
+    <!-- Estilo para etiquetas de título -->
+    <Style x:Key="TitleLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+    </Style>
+
+    <!-- Estilo para etiquetas secundarias -->
+    <Style x:Key="SubtitleLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="TextColor" Value="{StaticResource TextSecondaryColor}"/>
+    </Style>
+
+    <!-- Estilo para badges -->
+    <Style x:Key="BadgeStyle" TargetType="Border">
+        <Setter Property="Stroke" Value="Transparent"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource LightGrayColor}"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 12"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="HorizontalOptions" Value="Start"/>
+    </Style>
+
+</ResourceDictionary>
