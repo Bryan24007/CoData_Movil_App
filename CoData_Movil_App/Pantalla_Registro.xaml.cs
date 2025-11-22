@@ -8,8 +8,5 @@ public partial class Pantalla_Registro : ContentPage
 	{
 		InitializeComponent();
 	}
-    private async void volver(object sender, EventArgs e)
-    {
-        await Navigation.PopAsync();
-    }
+   
 }

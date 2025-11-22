@@ -5,8 +5,7 @@
              x:Class="CoData_Movil_App.MainPage"
              
              >
-   
-    
+  
 
     <ScrollView>
         <VerticalStackLayout

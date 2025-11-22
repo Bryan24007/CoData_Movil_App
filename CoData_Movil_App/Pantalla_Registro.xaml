@@ -96,7 +96,7 @@
             <Button Text="REGISTRARSE" Grid.Row="0" Grid.Column="2"  BackgroundColor="#960e53" HorizontalOptions="Center" VerticalOptions="Center"/>
 
 
-            <Button Text="Volver" Grid.Row="1" Grid.Column="2" BackgroundColor="#960e53" Clicked="volver" />
+         
         </Grid>
 
 
