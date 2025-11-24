@@ -22,5 +22,11 @@ namespace CoData_Movil_App
             await Navigation.PushAsync(new Pantalla_Registro());
 
         }
+
+        private async void Buton_inicar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Menu());
+
+        }
     }
 }

@@ -49,7 +49,7 @@
             </StackLayout>
 
 
-            <Button Text="Iniciar" BackgroundColor="#960e53"/>
+            <Button Text="Iniciar" BackgroundColor="#960e53" Clicked="Buton_inicar"/>
            
             <Grid RowSpacing="20" ColumnSpacing="100" Grid.Row="20">
                 <Grid.RowDefinitions>

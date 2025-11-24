@@ -6,7 +6,7 @@
              Title="Pantalla_Registro">
 
     <VerticalStackLayout>
-        <Label Text="Crear cuenta" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0"  FontSize="30" />
+        <Label Text="Crea tu cuenta" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0"  FontSize="30" />
 
         <Grid  RowSpacing="20" ColumnSpacing="40" Grid.Row="20" >
          <Grid.RowDefinitions>
@@ -30,7 +30,7 @@
 
          <Button ImageSource="logo_whatsapp.png" Grid.Row="2" Grid.Column="3" Background="Transparent" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="60" CornerRadius="50"/>
          <Button ImageSource="logo_google.png"  Grid.Row="2"  Grid.Column="4" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="60" CornerRadius="50"/>
-         <Button ImageSource="icono_user.png"  Grid.Row="2"  Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="60" CornerRadius="50"/>
+         <Button ImageSource="icono_facebook.png"  Grid.Row="2"  Grid.Column="2" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" WidthRequest="60" CornerRadius="50"/>
 
 
 
@@ -54,7 +54,7 @@
 
         <StackLayout Orientation="Horizontal">
             <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28" >
-                <Image Source="icono_user.png" HeightRequest="20" WidthRequest="20"/>
+                <Image Source="icono_correo.png" HeightRequest="20" WidthRequest="20"/>
             </Frame>
 
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
