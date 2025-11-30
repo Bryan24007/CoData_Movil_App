@@ -30,7 +30,7 @@
                 </Frame>
 
                 <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                    <Entry Margin="20,0,0,0" Placeholder="Correo electronico" Keyboard="Email" />
+                    <Entry Margin="20,0,0,0" x:Name="txtEmail" Placeholder="Correo electronico" Keyboard="Email" />
                 </Frame>
             </StackLayout>
 
@@ -40,13 +40,17 @@
                 </Frame>
 
                 <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                    <Entry Margin="20,0,0,0" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
+                    <Entry Margin="20,0,0,0" x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
 
                     
                 </Frame>
-                <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30"/>
+                <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30" Clicked="oculto"/>
                 
             </StackLayout>
+
+            <VerticalStackLayout Padding="30">
+                <Label x:Name="lblMessage" TextColor="Red"/>
+            </VerticalStackLayout>
 
 
             <Button Text="Iniciar" BackgroundColor="#960e53" Clicked="Buton_inicar"/>
@@ -64,8 +68,7 @@
                 <Label VerticalOptions="Start" Text="¿Olvideaste tu contraseña?" Grid.Row="0" Grid.Column="0"/>
                 <Button BackgroundColor="Transparent" TextColor="Black" Text="Registrarse" Grid.Row="0" Grid.Column="1" Clicked="p_registro" />
             </Grid>
-           
-           
+            
                 <VerticalStackLayout>
                 <Label Text="Continuar con:" TextColor="DarkSlateGrey" FontSize="18" HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>

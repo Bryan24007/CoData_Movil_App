@@ -45,7 +45,7 @@
             </Frame>
 
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                <Entry Margin="20,0,0,0" Placeholder="Nombre" Keyboard="Text" />
+                <Entry Margin="20,0,0,0" x:Name="txtUser" Placeholder="Nombre" Keyboard="Text" />
             </Frame>
         </StackLayout>
         <Grid>
@@ -58,7 +58,7 @@
             </Frame>
 
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                <Entry Margin="20,0,0,0" Placeholder="Correo electronico" Keyboard="Email" />
+                <Entry Margin="20,0,0,0" x:Name="txtEmail" Placeholder="Correo electronico" Keyboard="Email" />
             </Frame>
         </StackLayout>
         <Grid>
@@ -72,15 +72,17 @@
             </Frame>
 
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
-                <Entry Margin="20,0,0,0" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
+                <Entry Margin="20,0,0,0" x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" Keyboard="Text" />
 
 
             </Frame>
             <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30"/>
 
         </StackLayout>
-
-        <Button Text="Iniciar"  BackgroundColor="Transparent"/>
+        <VerticalStackLayout Padding="30">
+            <Label x:Name="lblMessage" TextColor="Green"/>
+        </VerticalStackLayout>
+            <Button Text="Iniciar"  BackgroundColor="Transparent"/>
         
 
         <Grid  RowSpacing="20" ColumnSpacing="170" Grid.Row="20">
@@ -93,7 +95,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="REGISTRARSE" Grid.Row="0" Grid.Column="2"  BackgroundColor="#960e53" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="REGISTRARSE" Grid.Row="0" Grid.Column="2"  BackgroundColor="#960e53" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Registro"/>
 
 
          

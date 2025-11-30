@@ -8,7 +8,9 @@ namespace CoData_Movil_App
         {
             InitializeComponent();
 
-            MainPage = new Menu();
+            MainPage = new MainPage();
+            
+            
             MainPage = new NavigationPage(new MainPage());
         }
     }
