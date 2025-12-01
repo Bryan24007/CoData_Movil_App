@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.NavBarIsVisible="False"
              x:Class="CoData_Movil_App.MainPage"
-             
+             NavigationPage.HasNavigationBar="False"
              >
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+            <GradientStop Color="#D67263" Offset="0.0" />
+            <GradientStop Color="#D45F5F" Offset="1.0" />
+        </RadialGradientBrush>
+    </ContentPage.Background>
   
 
     <ScrollView>
@@ -16,7 +22,7 @@
             <Image Source="logo_codata.png" HeightRequest="150" WidthRequest="150"/>
            
             <Label
-                Text="Bienvenido!"
+                Text="Bienvenido!" TextColor="Black"
                 Style="{StaticResource Headline}"
                 />
 
@@ -49,7 +55,7 @@
             </StackLayout>
 
             <VerticalStackLayout Padding="30">
-                <Label x:Name="lblMessage" TextColor="Red"/>
+                <Label x:Name="lblMessage" HorizontalOptions="Center" TextColor="Black"  FontSize="18"/>
             </VerticalStackLayout>
 
 
@@ -70,7 +76,7 @@
             </Grid>
             
                 <VerticalStackLayout>
-                <Label Text="Continuar con:" TextColor="DarkSlateGrey" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Label Text="Continuar con:" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>
 
             <ImageButton Source="logo_whatsapp.png"/>

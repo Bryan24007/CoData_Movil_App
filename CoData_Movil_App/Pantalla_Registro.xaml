@@ -3,7 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CoData_Movil_App.MVM.View.Pantalla_Registro"
              BackgroundColor="WhiteSmoke"
-             Title="Pantalla_Registro">
+             Title="">
+
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+            <GradientStop Color="#D67263" Offset="0.0" />
+            <GradientStop Color="#D45F5F" Offset="1.0" />
+        </RadialGradientBrush>
+    </ContentPage.Background>
 
     <VerticalStackLayout>
         <Label Text="Crea tu cuenta" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0"  FontSize="30" />
@@ -76,13 +83,13 @@
 
 
             </Frame>
-            <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30"/>
+            <ImageButton x:Name="ocultar" Padding="0" Margin="10,0,0,0" Source="icons_visible.png" HeightRequest="30" WidthRequest="30" Clicked="vercontra" />
 
         </StackLayout>
         <VerticalStackLayout Padding="30">
-            <Label x:Name="lblMessage" TextColor="Green"/>
+            <Label x:Name="lblMessage" TextColor="White"/>
         </VerticalStackLayout>
-            <Button Text="Iniciar"  BackgroundColor="Transparent"/>
+
         
 
         <Grid  RowSpacing="20" ColumnSpacing="170" Grid.Row="20">
@@ -100,9 +107,15 @@
 
          
         </Grid>
+        
 
 
+
+        
 
 
     </VerticalStackLayout>
+    
+
+
 </ContentPage>

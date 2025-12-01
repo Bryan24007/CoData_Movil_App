@@ -32,6 +32,7 @@ namespace CoData_Movil_App
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(pass))
             {
                 lblMessage.Text = "Debe ingresar correo y contraseña.";
+                
                 return;
             }
 
@@ -44,7 +45,7 @@ namespace CoData_Movil_App
             }
             else
             {
-                lblMessage.Text = "Datos incorrectos.";
+                lblMessage.Text = "Datos incorrectos!";
             }
 
         }

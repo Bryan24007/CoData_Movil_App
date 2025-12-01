@@ -18,21 +18,21 @@ public partial class Pantalla_Registro : ContentPage
         // Validaciones básicas
         if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(pass))
         {
-            lblMessage.TextColor = Colors.Red;
+            lblMessage.TextColor = Colors.White;
             lblMessage.Text = "Debe ingresar correo y contraseña.";
             return;
         }
 
         if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
         {
-            lblMessage.TextColor = Colors.Red;
+            lblMessage.TextColor = Colors.White;
             lblMessage.Text = "Formato de correo inválido.";
             return;
         }
 
         if (pass.Length < 6)
         {
-            lblMessage.TextColor = Colors.Red;
+            lblMessage.TextColor = Colors.White;
             lblMessage.Text = "La contraseña debe tener al menos 6 caracteres.";
             return;
         }
@@ -41,7 +41,7 @@ public partial class Pantalla_Registro : ContentPage
         var existingUser = (await _db.GetUsersAsync()).FirstOrDefault(u => u.Email == email);
         if (existingUser != null)
         {
-            lblMessage.TextColor = Colors.Red;
+            lblMessage.TextColor = Colors.White;
             lblMessage.Text = "El correo ya está registrado.";
             return;
         }
@@ -50,10 +50,23 @@ public partial class Pantalla_Registro : ContentPage
         var newUser = new User { Email = email, Password = pass };
         await _db.AddUserAsync(newUser);
 
-        lblMessage.TextColor = Colors.Green;
+        lblMessage.TextColor = Colors.White;
         lblMessage.Text = "Usuario registrado correctamente.";
 
         // Opcional: navegar directo al login
-        await Navigation.PushAsync(new MainPage());
+        await Navigation.PopAsync();
+    }
+    private bool _isPasswordVisible = false;
+    private async void vercontra(object sender, EventArgs e)
+    {
+        _isPasswordVisible = !_isPasswordVisible;
+
+        // Cambiar visibilidad
+        txtPassword.IsPassword = !_isPasswordVisible;
+
+        // Cambiar ícono según estado
+        ocultar.Source = _isPasswordVisible
+            ? "icons_oculto.png"   // Ícono de "ocultar"
+            : "icons_visible.png"; // Ícono de "mostrar"
     }
 }
