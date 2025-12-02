@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoData_Movil_App.MVM.View.SeguimientoPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="SeguimientoPage">
+    <ContentPage.Background>
+        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+            <GradientStop Color="#CBBBA0" Offset="0.0" />
+            <GradientStop Color="#FFF9C4" Offset="1.0" />
+        </RadialGradientBrush>
+    </ContentPage.Background>
+    <AbsoluteLayout>
+
+        <!-- Contenido principal -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,0.9"
+                    AbsoluteLayout.LayoutFlags="All">
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="Reportes guardados"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <CollectionView x:Name="reportesList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="12" Padding="10" Margin="0,5"
+                                   BackgroundColor="Wheat" HasShadow="True">
+                                <VerticalStackLayout>
+                                    <!-- Editor para editar el texto -->
+                                    <Editor Text="{Binding Texto}" 
+                                            AutoSize="TextChanges"
+                                            TextColor="Black"
+                                            BackgroundColor="White"
+                                            HeightRequest="80"/>
+
+                                    <!-- Fecha -->
+                                    <Label Text="{Binding Fecha}" 
+                                           FontSize="12" 
+                                           TextColor="Black"/>
+
+                                    <!-- Botones de acción -->
+                                    <HorizontalStackLayout Spacing="10">
+                                        <Button Text="Guardar"
+                                                BackgroundColor="#2C3E50"
+                                                TextColor="White"
+                                                Command="{Binding SaveCommand}"/>
+                                        <Button Text="Eliminar"
+                                                BackgroundColor="#960e53"
+                                                TextColor="White"
+                                                Command="{Binding DeleteCommand}"/>
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Barra de Navegación -->
+        <Grid BackgroundColor="#960e53"
+              Padding="10"
+              AbsoluteLayout.LayoutBounds="0,1,1,0.1"
+              AbsoluteLayout.LayoutFlags="All"
+              VerticalOptions="End"
+              HorizontalOptions="Fill">
+
+            <Grid.Clip>
+                <RoundRectangleGeometry CornerRadius="20"
+                                        Rect="3,1,400,100"/>
+            </Grid.Clip>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Grid.Column="0" Source="icono_casa.png" Clicked="PageMenu"/>
+            <ImageButton Grid.Column="1" Source="icono_seguimiento.png" />
+            <ImageButton Grid.Column="2" Source="icono_mapa.png" />
+            <ImageButton Grid.Column="3" Source="icono_user.png" />
+            <ImageButton Grid.Column="4" Source="icono_ajustes.png" />
+        </Grid>
+
+    </AbsoluteLayout>
+</ContentPage>
+    

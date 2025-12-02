@@ -11,8 +11,8 @@
             <GradientStop Color="#FFF9C4" Offset="1.0" />
         </RadialGradientBrush>
     </ContentPage.Background>
-
-    <ScrollView>
+   
+        <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
 
         <!-- Buscardor -->
@@ -154,15 +154,15 @@
 
         <!-- Barra de Navegación -->
             <Grid BackgroundColor="#960e53"
-               Padding="1"
-              AbsoluteLayout.LayoutBounds="3,3,3,2.3"
-              AbsoluteLayout.LayoutFlags="None"
+               Padding="10"
+              AbsoluteLayout.LayoutBounds="0,1,1,0.1"
+              AbsoluteLayout.LayoutFlags="All"
               VerticalOptions="Center"
                   HorizontalOptions="Center">
 
                 <Grid.Clip>
                     <RoundRectangleGeometry CornerRadius="30"
-                                Rect="1,2,300,90"/>
+                                Rect="1,10,300,90"/>
                 </Grid.Clip>
 
                 <Grid.ColumnDefinitions>
@@ -173,8 +173,8 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <ImageButton Grid.Column="0" Source="icono_casa.png" />
-                <ImageButton Grid.Column="1" Source="icono_seguimiento.png" />
+                <ImageButton Grid.Column="0" Source="icono_casa.png"  />
+                <ImageButton Grid.Column="1" Source="icono_seguimiento.png" Clicked="PageSeguimiento" />
                 <ImageButton Grid.Column="2" Source="icono_mapa.png" />
                 <ImageButton Grid.Column="3" Source="icono_user.png" />
                 <ImageButton Grid.Column="4" Source="icono_ajustes.png" />
@@ -184,6 +184,7 @@
 
     </VerticalStackLayout>
     </ScrollView>
+   
 
 
 

@@ -1,3 +1,5 @@
+using CoData_Movil_App.MVM.View;
+
 namespace CoData_Movil_App;
 
 public partial class Menu : ContentPage
@@ -30,4 +32,12 @@ public partial class Menu : ContentPage
 
         txtReporte.Text = string.Empty; // limpiar editor
     }
+
+    private async void PageSeguimiento(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SeguimientoPage());
+
+    }
+   
+    
 }
