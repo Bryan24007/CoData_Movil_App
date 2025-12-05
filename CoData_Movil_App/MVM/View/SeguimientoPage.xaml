@@ -5,10 +5,10 @@
              NavigationPage.HasNavigationBar="False"
              Title="SeguimientoPage">
     <ContentPage.Background>
-        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
-            <GradientStop Color="#CBBBA0" Offset="0.0" />
-            <GradientStop Color="#FFF9C4" Offset="1.0" />
-        </RadialGradientBrush>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#ffffff" Offset="0.0" />
+            <GradientStop Color="#adecff" Offset="1.0" />
+        </LinearGradientBrush>
     </ContentPage.Background>
     <AbsoluteLayout>
 
@@ -26,15 +26,17 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Frame CornerRadius="12" Padding="10" Margin="0,5"
-                                   BackgroundColor="Wheat" HasShadow="True">
+                                   BackgroundColor="FloralWhite" HasShadow="True">
                                 <VerticalStackLayout>
                                     <!-- Editor para editar el texto -->
-                                    <Editor Text="{Binding Texto}" 
+                                    <Editor Text="{Binding Texto}"
                                             AutoSize="TextChanges"
                                             TextColor="Black"
                                             BackgroundColor="White"
                                             HeightRequest="80"/>
-
+                                    <Label Text="{Binding Ubi}" 
+                                           FontSize="14" 
+                                           TextColor="Gray"/>
                                     <!-- Fecha -->
                                     <Label Text="{Binding Fecha}" 
                                            FontSize="12" 
@@ -43,12 +45,12 @@
                                     <!-- Botones de acción -->
                                     <HorizontalStackLayout Spacing="10">
                                         <Button Text="Guardar"
-                                                BackgroundColor="#2C3E50"
-                                                TextColor="White"
+                                                BackgroundColor="#66CDAA"
+                                                TextColor="Black"
                                                 Command="{Binding SaveCommand}"/>
                                         <Button Text="Eliminar"
-                                                BackgroundColor="#960e53"
-                                                TextColor="White"
+                                                BackgroundColor="#DC143C"
+                                                TextColor="Black"
                                                 Command="{Binding DeleteCommand}"/>
                                     </HorizontalStackLayout>
                                 </VerticalStackLayout>
@@ -60,7 +62,7 @@
         </ScrollView>
 
         <!-- Barra de Navegación -->
-        <Grid BackgroundColor="#960e53"
+        <Grid BackgroundColor="#F0FFF0"
               Padding="10"
               AbsoluteLayout.LayoutBounds="0,1,1,0.1"
               AbsoluteLayout.LayoutFlags="All"
@@ -84,7 +86,7 @@
             <ImageButton Grid.Column="1" Source="icono_seguimiento.png" />
             <ImageButton Grid.Column="2" Source="icono_mapa.png" />
             <ImageButton Grid.Column="3" Source="icono_user.png" />
-            <ImageButton Grid.Column="4" Source="icono_ajustes.png" />
+            
         </Grid>
 
     </AbsoluteLayout>

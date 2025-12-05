@@ -38,6 +38,10 @@ public partial class Menu : ContentPage
         await Navigation.PushAsync(new SeguimientoPage());
 
     }
-   
-    
+    private async void OnFugasClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FugasDeAguaPage());
+    }
+
+
 }

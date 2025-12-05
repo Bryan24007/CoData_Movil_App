@@ -16,4 +16,7 @@ public class ReporteRepository
     public async Task<int> UpdateReporteAsync(Reporte reporte) => await _db.UpdateAsync(reporte);
     public async Task<int> DeleteReporteAsync(Reporte reporte) => await _db.DeleteAsync(reporte);
 
+    
+
+
 }
