@@ -1,4 +1,5 @@
 using CoData_Movil_App.MVM.View;
+using CoData_Movil_App.MVM;
 
 namespace CoData_Movil_App;
 
@@ -42,6 +43,9 @@ public partial class Menu : ContentPage
     {
         await Navigation.PushAsync(new FugasDeAguaPage());
     }
-
+    private async void PagePerfil(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new PagePerfil());
+    }
 
 }

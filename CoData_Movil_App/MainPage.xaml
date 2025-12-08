@@ -6,12 +6,11 @@
              NavigationPage.HasNavigationBar="False"
              >
     <ContentPage.Background>
-        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
-            <GradientStop Color="#D67263" Offset="0.0" />
-            <GradientStop Color="#D45F5F" Offset="1.0" />
-        </RadialGradientBrush>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#ffffff" Offset="0.0" />
+            <GradientStop Color="#adecff" Offset="1.0" />
+        </LinearGradientBrush>
     </ContentPage.Background>
-  
 
     <ScrollView>
         <VerticalStackLayout
@@ -59,7 +58,7 @@
             </VerticalStackLayout>
 
 
-            <Button Text="Iniciar" BackgroundColor="#960e53" Clicked="Buton_inicar"/>
+            <Button Text="Iniciar" BackgroundColor="#66CDAA" Clicked="Buton_inicar"/>
            
             <Grid RowSpacing="20" ColumnSpacing="100" Grid.Row="20">
                 <Grid.RowDefinitions>

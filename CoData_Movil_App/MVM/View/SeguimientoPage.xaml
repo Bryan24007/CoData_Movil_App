@@ -85,7 +85,7 @@
             <ImageButton Grid.Column="0" Source="icono_casa.png" Clicked="PageMenu"/>
             <ImageButton Grid.Column="1" Source="icono_seguimiento.png" />
             <ImageButton Grid.Column="2" Source="icono_mapa.png" />
-            <ImageButton Grid.Column="3" Source="icono_user.png" />
+            <ImageButton Grid.Column="3" Source="icono_user.png" Clicked="PagePerfil"/>
             
         </Grid>
 

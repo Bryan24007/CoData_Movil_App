@@ -5,10 +5,12 @@
               NavigationPage.HasNavigationBar="False"
              Title="FugasDeAguaPage">
     <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+
             <GradientStop Color="#ffffff" Offset="0.0" />
+
             <GradientStop Color="#adecff" Offset="1.0" />
-        </LinearGradientBrush>
+        </RadialGradientBrush>
     </ContentPage.Background>
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
@@ -19,7 +21,7 @@
 
      
         <Editor x:Name="DescripcionEditor"
-                Placeholder="Escribe aquí los detalles..."
+                Text="Ejemplo: Tengo una fuga en la llave de paso..."
                 AutoSize="TextChanges"
                 HeightRequest="150"/>
 
@@ -32,11 +34,17 @@
 
 
         <Button Text="Enviar Reporte"
-                BackgroundColor="#960e53"
+                BackgroundColor="#66CDAA"
                 TextColor="White"
                 Clicked="OnEnviarReporteClicked"/>
-       
-        <Grid BackgroundColor="#960e53"
+           
+            <ImageButton></ImageButton>
+            <ImageButton></ImageButton>
+            <ImageButton></ImageButton>
+            <ImageButton></ImageButton>
+            <ImageButton></ImageButton>
+
+                <Grid BackgroundColor="#F0FFF0"
       Padding="10"
       AbsoluteLayout.LayoutBounds="0,1,1,0.1"
       AbsoluteLayout.LayoutFlags="All"

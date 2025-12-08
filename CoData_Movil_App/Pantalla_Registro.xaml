@@ -6,10 +6,10 @@
              Title="">
 
     <ContentPage.Background>
-        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
-            <GradientStop Color="#D67263" Offset="0.0" />
-            <GradientStop Color="#D45F5F" Offset="1.0" />
-        </RadialGradientBrush>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#ffffff" Offset="0.0" />
+            <GradientStop Color="#adecff" Offset="1.0" />
+        </LinearGradientBrush>
     </ContentPage.Background>
 
     <VerticalStackLayout>
@@ -102,7 +102,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="REGISTRARSE" Grid.Row="0" Grid.Column="2"  BackgroundColor="#960e53" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Registro"/>
+            <Button Text="REGISTRARSE" Grid.Row="0" Grid.Column="2"  BackgroundColor="#66CDAA" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Registro"/>
 
 
          
