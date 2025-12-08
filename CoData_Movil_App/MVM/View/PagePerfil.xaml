@@ -11,6 +11,7 @@
         </LinearGradientBrush>
     </ContentPage.Background>
     <ScrollView>
+        
         <StackLayout Padding="20" Spacing="20">
             <Label Text="Mi Perfil" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
 
