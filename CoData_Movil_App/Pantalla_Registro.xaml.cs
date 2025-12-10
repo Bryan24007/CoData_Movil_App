@@ -18,21 +18,21 @@ public partial class Pantalla_Registro : ContentPage
         // Validaciones básicas
         if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(pass))
         {
-            lblMessage.TextColor = Colors.White;
+            lblMessage.TextColor = Colors.Black;
             lblMessage.Text = "Debe ingresar correo y contraseña.";
             return;
         }
 
         if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
         {
-            lblMessage.TextColor = Colors.White;
+            lblMessage.TextColor = Colors.Black;
             lblMessage.Text = "Formato de correo inválido.";
             return;
         }
 
         if (pass.Length < 6)
         {
-            lblMessage.TextColor = Colors.White;
+            lblMessage.TextColor = Colors.Black;
             lblMessage.Text = "La contraseña debe tener al menos 6 caracteres.";
             return;
         }
@@ -41,7 +41,7 @@ public partial class Pantalla_Registro : ContentPage
         var existingUser = (await _db.GetUsersAsync()).FirstOrDefault(u => u.Email == email);
         if (existingUser != null)
         {
-            lblMessage.TextColor = Colors.White;
+            lblMessage.TextColor = Colors.Black;
             lblMessage.Text = "El correo ya está registrado.";
             return;
         }
@@ -50,7 +50,7 @@ public partial class Pantalla_Registro : ContentPage
         var newUser = new User { Email = email, Password = pass };
         await _db.AddUserAsync(newUser);
 
-        lblMessage.TextColor = Colors.White;
+        lblMessage.TextColor = Colors.Black;
         lblMessage.Text = "Usuario registrado correctamente.";
 
         // Opcional: navegar directo al login

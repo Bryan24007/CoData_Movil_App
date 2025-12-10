@@ -54,6 +54,7 @@
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
                 <Entry Margin="20,0,0,0" x:Name="txtUser" Placeholder="Nombre" Keyboard="Text" />
             </Frame>
+            <ImageButton></ImageButton>
         </StackLayout>
         <Grid>
             <Label Text=""/>
@@ -67,6 +68,7 @@
             <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
                 <Entry Margin="20,0,0,0" x:Name="txtEmail" Placeholder="Correo electronico" Keyboard="Email" />
             </Frame>
+            <ImageButton></ImageButton>
         </StackLayout>
         <Grid>
             <Label Text=""/>
@@ -87,7 +89,7 @@
 
         </StackLayout>
         <VerticalStackLayout Padding="30">
-            <Label x:Name="lblMessage" TextColor="White"/>
+            <Label x:Name="lblMessage" TextColor="Black"/>
         </VerticalStackLayout>
 
         
